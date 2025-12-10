@@ -1,3 +1,6 @@
+# Day 002: Python: Comparison, Logical Operators and 
+# Shorthand Assignments
+
 # Data types
 
 # Integer assignment
@@ -99,7 +102,7 @@ print("here")
 # Floor division, exponent, modulus
 print(5//2)   # Floor division (result: 2)
 print(5**3)   # Exponentiation (5^3 = 125)
-print(5%2)    # Modulus (remainder when divided by 2)
+print(5 % 2)    # Modulus (remainder when divided by 2)
 
 # Concatenating numeric-looking strings
 print("1" + "1")  # Output: "11"

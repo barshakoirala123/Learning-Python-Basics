@@ -1,4 +1,5 @@
-#Day 003: If-else, nested conditions, grading system,
+
+# Day004 :If-else, nested conditions, grading system, 
 # validation, ternary operator, isinstance
 
 # Data types
@@ -102,7 +103,7 @@ print("here")
 # Floor division, exponent, modulus
 print(5//2)   # Floor division (result: 2)
 print(5**3)   # Exponentiation (5^3 = 125)
-print(5 % 2)    # Modulus (remainder when divided by 2)
+print(5%2)    # Modulus (remainder when divided by 2)
 
 # Concatenating numeric-looking strings
 print("1" + "1")  # Output: "11"
@@ -127,7 +128,7 @@ A = 1  # Variable names are case-sensitive; 'a' and 'A' are different variables
 print(True and True)   # Both True -> True
 print(True or False)   # One True -> True
 print(False or True)   # One True -> True
-print(not (False))      # not False -> True
+print(not(False))      # not False -> True
 
 # Shorthand operators (augmented assignment)
 # a += 3   means a = a + 3
@@ -144,34 +145,119 @@ print(a == b and b > a)  # Logical AND combining comparisons
 a += b              # Adds b to a
 print(a)            # Updated value of a
 
+# --------------------------------------------
+# Conditional statements with improved explanations
+# --------------------------------------------
 '''
+General structure of conditional statements:
 if(condition):
     code block
+elif(condition):
+    code block
+elif(condition):
+    code block
 else:
-    <block block>
-
+    code block
 '''
-a = False
-if (a):
-    print("this is if condition")
+
+# Example structure
+# a = 2
+# if a == 1:
+#     print("first")
+# elif a == 2:
+#     print("second")
+
+# Checking even or odd
+# a = int(input("Enter a number "))
+# if a % 2 == 0:
+#     print(f"{a} is even")
+# else:
+#     print(f"{a} is odd")
+
+# Percentage grading system with multiple conditions
+# a = float(input("Enter Your Percentage: "))
+# if 80 <= a <= 100:
+#     print(f'You have passed in first division with distinction with {a}%')
+# elif 60 <= a < 80:
+#     print(f'You have passed in first division with {a}%')
+# elif 45 <= a < 60:
+#     print(f'You have passed in second division with {a}%')
+# elif 35 <= a < 45:
+#     print(f'You have passed in third division with {a}%')
+# elif 0 <= a < 35:
+#     print(f'You have failed your exam with {a}%')
+# else:
+#     print(f'Invalid input, please try again')
+
+# Nested IF example
+'''
+nested-if pattern:
+if(condition):
+    if(condition):
+        code block
+    else:
+        code block
 else:
-    print("this is else condition")
+    if(condition):
+        code block
+'''
 
-
-# username and password
-username = "sudan"
-password = "broadway"
-
-
-a = input("enter a username ")
-b = input("enter a password ")
-
-if (username == a or password == b):
-    print("login success")
+if 1 == 1:
+    if 1 == 1:
+        print("1 is here")
+    else:
+        print("else is here")
+    print("i am if")
 else:
-    print("login failed")
+    print("1st else is here")
 
+# Nested-if program for discounts (assignment example provided)
+'''
+Create a nested-if program for shop discount.
+If purchase is above 1000:
+    If customer has membership -> 20% discount
+    Else -> 10% discount
+Print the applicable discount.
+'''
 
-# ----------------------------------------
-# End of notes
-# ----------------------------------------
+# Gender identification
+gender = "F"
+if gender == "M":
+    print("Male")
+else:
+    print("Female")
+
+# Using ternary operator for concise conditional assignment
+a = "Male" if gender == "M" else "Female"
+print(a)
+
+# Type checking example
+a = 1
+print("type check", isinstance(a, str))
+if isinstance(a, int):
+    print("number is int")
+
+print("--------------------")
+
+# Validating percentage input before converting
+a = "1"
+if not a.isalpha():  # Ensures the input doesn't contain letters
+    a = float(a)
+    if 80 <= a <= 100:
+        print(f'You have passed in first division with distinction with {a}%')
+    elif 60 <= a < 80:
+        print(f'You have passed in first division with {a}%')
+    elif 45 <= a < 60:
+        print(f'You have passed in second division with {a}%')
+    elif 35 <= a < 45:
+        print(f'You have passed in third division with {a}%')
+    elif 0 <= a < 35:
+        print(f'You have failed with {a}%')
+    else:
+        print("Your input is out of valid range")
+else:
+    print("Provide a valid number")
+
+# String case formatting
+data = "suDan"
+print(data.title())

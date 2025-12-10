@@ -1,7 +1,6 @@
 """
 Beginner-Friendly Python Notes
 This file rewrites your original notes in a clean, organized, and easy-to-understand way.
-Comments explain each concept step-by-step.
 """
 
 # ----------------------------------------
