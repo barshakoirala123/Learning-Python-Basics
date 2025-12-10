@@ -1,4 +1,4 @@
-# Day 8: Nested Lists, Dictionaries, and Data Access
+# Day 006: Nested Lists, Dictionaries, and Data Access
 # ---------------------------------------------------
 # This note explains how to work with nested lists, nested dictionaries,
 # and basic dictionary operations including keys, values, update, pop, and get.
