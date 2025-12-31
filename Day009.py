@@ -9,7 +9,7 @@ def mean(numbers):
     average = total/no_of_items
     print(f"The mean for given list of numbers is {average}")
 
-mean([1, 2, 3, 4])
+mean([1, 2, 3, 4, 5])
 
 '''
 Write a function that returns the median of data provided in a list.
